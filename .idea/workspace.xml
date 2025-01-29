@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7196e6ad-338b-4955-a03b-33c882e5ad53" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SolarEnergyParticlePrediction.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SolarEnergyParticlePrediction.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebooks/SEP_CFE_training.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/raw CFE logic.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/processed/cme_fl_features.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/processed/cme_fl_features.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/processed/fl_features.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/processed/fl_features.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/SEP_Prediction_Training.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/SEP_Prediction_Training.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/SEP_RFR_training.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/SEP_RFR_training.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,21 +53,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Pranjal/workspace/GIT_commands.txt",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "DSTables",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Pranjal/workspace/GIT_commands.txt&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;DSTables&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Pranjal\workspace\SolarEnergyParticlePrediction\notebooks" />
@@ -92,7 +98,11 @@
       <workItem from="1737652464612" duration="4493000" />
       <workItem from="1737906565599" duration="5892000" />
       <workItem from="1737991862241" duration="18401000" />
-      <workItem from="1738022555715" duration="3668000" />
+      <workItem from="1738022555715" duration="5423000" />
+      <workItem from="1738071336669" duration="2687000" />
+      <workItem from="1738086614002" duration="5953000" />
+      <workItem from="1738107278010" duration="5144000" />
+      <workItem from="1738116164092" duration="10001000" />
     </task>
     <servers />
   </component>

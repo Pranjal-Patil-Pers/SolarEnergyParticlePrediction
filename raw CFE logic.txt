@@ -1,0 +1,52 @@
+# A restructured implementation to define and use a regression model in Scikit-learn.
+
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.datasets import make_regression
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_squared_error
+
+# Create synthetic regression data
+X, y = make_regression(n_samples=100, n_features=4, noise=0.2, random_state=42)
+
+# Split data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Define a Random Forest Regressor
+rf_model = RandomForestRegressor(random_state=42)
+
+# Train the model on the training data
+rf_model.fit(X_train, y_train)
+
+# Make predictions on the test set
+y_pred = rf_model.predict(X_test)
+
+# Evaluate the model
+mse = mean_squared_error(y_test, y_pred)
+print(f"Mean Squared Error: {mse}")
+
+# Counterfactual explainability logic (manual implementation)
+# Generate a random instance and explore feature perturbations
+sample_instance = X_test[0].reshape(1, -1)  # Selecting a sample instance
+print("Original Prediction:", rf_model.predict(sample_instance)[0])
+
+# Perturb features to explore counterfactual explanations (example logic)
+for feature_index in range(sample_instance.shape[1]):
+    perturbed_instance = sample_instance.copy()
+    perturbed_instance[0, feature_index] += 1.0  # Adding +1.0 perturbation
+    new_prediction = rf_model.predict(perturbed_instance)[0]
+    print(f"Perturbing feature {feature_index} -> New Prediction: {new_prediction}")
+
+
+## Error for unsatisfied dice requirements
+
+copying pandas\_libs\window\indexers.pyx -> build\lib.win-amd64-cpython-312\pandas\_libs\window
+  UPDATING build\lib.win-amd64-cpython-312\pandas/_version.py
+  set build\lib.win-amd64-cpython-312\pandas/_version.py to '1.5.3'
+  running build_ext
+  building 'pandas._libs.algos' extension
+  error: Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/
+  [end of output]
+
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for pandas
+ERROR: ERROR: Failed to build installable wheels for some pyproject.toml based projects (pandas)
