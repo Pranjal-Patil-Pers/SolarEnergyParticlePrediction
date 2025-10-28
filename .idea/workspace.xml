@@ -4,17 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7196e6ad-338b-4955-a03b-33c882e5ad53" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/notebooks/SEP_CFE_training.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/raw CFE logic.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="7196e6ad-338b-4955-a03b-33c882e5ad53" name="Changes" comment="All the Physics-Guided counterfactual experiments and code">
+      <change afterPath="$PROJECT_DIR$/notebooks/GOES/GOES_FL_CFE_exp1.0_EDA_Model_Training.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebooks/GOES/GOES_FL_CFE_exp2_visualization.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebooks/Mean_sliced_data_generation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebooks/NativeGuide/Native_Guide_DBA_1.3_imp_window_approach.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebooks/NativeGuide/Native_Guide_Exp1.1_Data_Preprocessing.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebooks/NativeGuide/Native_Guide_Exp1.2_CF_evaluation.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebooks/mean_sliced_data.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/NativeGuide/Native_Guide_DBA_lib_1_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/NativeGuide/Native_guide_DBA_lib_1_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/NativeGuide/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/cme_fl_features.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/processed/cme_fl_features.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/fl_features.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/processed/fl_features.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/SEP_Prediction_Training.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/SEP_Prediction_Training.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/SEP_RFR_training.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/SEP_RFR_training.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filelist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/filelist.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/NativeGuide/Native Guide 1-NN DTW (Using DBA).ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/NativeGuide/Native Guide 1-NN DTW (Using DBA).ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/NativeGuide/Native_Guide_Exp1-Data_Preprocessing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/NativeGuide/Native_Guide_Exp1-Data_Preprocessing.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/SEP_CFE_Exp3.1_DiCE_Hyperparameter_Tuning.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/SEP_CFE_Exp3.1_DiCE_Hyperparameter_Tuning.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/SEP_CFE_Exp6_Evaluation_of_Extended_DiCE_genetic_frmwk.ipynb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +30,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Python Script" />
         <option value="Jupyter Notebook" />
       </list>
     </option>
@@ -42,6 +49,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Pranjal-Patil-Pers&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Pranjal-Patil-Pers/SolarEnergyParticlePrediction.git&quot;,
+    &quot;accountId&quot;: &quot;1fd8e60b-f105-43ff-ad8d-5d1b3440c31d&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/anaconda3/Lib/site-packages/dice_ml/constants.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/anaconda3/Lib/site-packages/dice_ml/data_interfaces/base_data_interface.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/anaconda3/Lib/site-packages/dice_ml/explainer_interfaces/dice_genetic.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/anaconda3/Lib/site-packages/dice_ml/explainer_interfaces/explainer_base.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -55,35 +83,90 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python.Mean_sliced_data_generation.executor&quot;: &quot;Run&quot;,
+    &quot;Python.SEP_CFE_Exp3.3_DiCE_Hyperparameter_Tuning.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dice_genetic.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;database.data.extractors.current.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Pranjal/workspace/GIT_commands.txt&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/workspace/SolarEnergyParticlePrediction&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;DSTables&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\SolarEnergyParticlePrediction\scripts" />
+      <recent name="D:\workspace\SolarEnergyParticlePrediction\reports" />
+      <recent name="D:\workspace\SolarEnergyParticlePrediction\notebooks" />
       <recent name="C:\Users\Pranjal\workspace\SolarEnergyParticlePrediction\notebooks" />
       <recent name="C:\Users\Pranjal\workspace\SolarEnergyParticlePrediction\data" />
-      <recent name="C:\Users\Pranjal\workspace\SolarEnergyParticlePrediction\models" />
-      <recent name="C:\Users\Pranjal\workspace\SolarEnergyParticlePrediction\data\raw" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\SolarEnergyParticlePrediction\notebooks\GOES" />
+      <recent name="D:\workspace\SolarEnergyParticlePrediction\scripts\NativeGuide\" />
+      <recent name="D:\workspace\SolarEnergyParticlePrediction\NativeGuide\scripts" />
+      <recent name="D:\workspace\SolarEnergyParticlePrediction\scripts\SEP_CFE_DiCE" />
       <recent name="C:\Users\Pranjal\workspace\SolarEnergyParticlePrediction\notebooks" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="dice_genetic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SolarEnergyParticlePrediction" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/anaconda3/Lib/site-packages/dice_ml/explainer_interfaces" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/anaconda3/Lib/site-packages/dice_ml/explainer_interfaces/dice_genetic.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="false" />
+      <option name="INTERPRETER_PATH" value="C:/Program Files/Git/bin/bash.exe" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.dice_genetic" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-PY-243.22562.220" />
-        <option value="bundled-python-sdk-0fc6c617c4bd-9a18a617cbe4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.22562.220" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-PY-243.26574.90" />
+        <option value="bundled-python-sdk-c1fac28bca04-4df51de95216-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.26574.90" />
       </set>
     </attachedChunks>
   </component>
@@ -102,11 +185,144 @@
       <workItem from="1738071336669" duration="2687000" />
       <workItem from="1738086614002" duration="5953000" />
       <workItem from="1738107278010" duration="5144000" />
-      <workItem from="1738116164092" duration="10001000" />
+      <workItem from="1738116164092" duration="12144000" />
+      <workItem from="1738184319307" duration="70000" />
+      <workItem from="1739209863006" duration="19591000" />
+      <workItem from="1739407323048" duration="8019000" />
+      <workItem from="1739538347612" duration="1248000" />
+      <workItem from="1739544062975" duration="756000" />
+      <workItem from="1739722377852" duration="640000" />
+      <workItem from="1739803997975" duration="22378000" />
+      <workItem from="1740330089707" duration="606000" />
+      <workItem from="1740355036086" duration="6472000" />
+      <workItem from="1740405110381" duration="6569000" />
+      <workItem from="1740412411164" duration="18409000" />
+      <workItem from="1740789733891" duration="219000" />
+      <workItem from="1740933738106" duration="31861000" />
+      <workItem from="1741469546324" duration="707000" />
+      <workItem from="1741527216422" duration="29579000" />
+      <workItem from="1741610841397" duration="16275000" />
+      <workItem from="1742004164411" duration="7628000" />
+      <workItem from="1742223133686" duration="22855000" />
+      <workItem from="1742264684090" duration="3574000" />
+      <workItem from="1742817873989" duration="15693000" />
+      <workItem from="1743418355151" duration="16497000" />
+      <workItem from="1743443817825" duration="4944000" />
+      <workItem from="1743511643488" duration="4185000" />
+      <workItem from="1744031364217" duration="5216000" />
+      <workItem from="1744041788836" duration="1940000" />
+      <workItem from="1744054920350" duration="2508000" />
+      <workItem from="1744067459401" duration="45000" />
+      <workItem from="1744163643769" duration="3804000" />
+      <workItem from="1744218912811" duration="2043000" />
+      <workItem from="1744246132958" duration="15794000" />
+      <workItem from="1744555133035" duration="4361000" />
+      <workItem from="1744641121993" duration="1435000" />
+      <workItem from="1745022334485" duration="1204000" />
+      <workItem from="1745063518474" duration="20414000" />
+      <workItem from="1745247652319" duration="11955000" />
+      <workItem from="1745528411890" duration="1156000" />
+      <workItem from="1745619110449" duration="6000" />
+      <workItem from="1745762117370" duration="819000" />
+      <workItem from="1745858297932" duration="3124000" />
+      <workItem from="1746221533401" duration="2963000" />
+      <workItem from="1746445395638" duration="25666000" />
+      <workItem from="1746616028495" duration="586000" />
+      <workItem from="1747145885826" duration="78000" />
+      <workItem from="1747398829657" duration="20324000" />
+      <workItem from="1747567324329" duration="31568000" />
+      <workItem from="1747764570742" duration="4033000" />
+      <workItem from="1747838249226" duration="33000" />
+      <workItem from="1748815811585" duration="22507000" />
+      <workItem from="1748905253608" duration="29253000" />
+      <workItem from="1749007226184" duration="40363000" />
+      <workItem from="1749275100421" duration="2615000" />
+      <workItem from="1749564273651" duration="1796000" />
+      <workItem from="1749767878686" duration="3438000" />
+      <workItem from="1749772760015" duration="4895000" />
+      <workItem from="1749780648959" duration="2563000" />
+      <workItem from="1749812818971" duration="70000" />
+      <workItem from="1749831945897" duration="2000" />
+      <workItem from="1750096206252" duration="15328000" />
+      <workItem from="1750287263634" duration="31000" />
+      <workItem from="1750587515204" duration="38000" />
+      <workItem from="1751121686575" duration="1208000" />
+      <workItem from="1752757994074" duration="1992000" />
+      <workItem from="1752760190418" duration="6985000" />
+      <workItem from="1752774244610" duration="1996000" />
+      <workItem from="1752777493825" duration="8335000" />
+      <workItem from="1754050188557" duration="5413000" />
+      <workItem from="1754487168277" duration="8568000" />
+      <workItem from="1756162085106" duration="404000" />
+      <workItem from="1756240854476" duration="9431000" />
+      <workItem from="1756463193898" duration="13381000" />
+      <workItem from="1756743343238" duration="10656000" />
+      <workItem from="1756819494750" duration="12602000" />
+      <workItem from="1756854252666" duration="10710000" />
+      <workItem from="1757444615826" duration="102000" />
+      <workItem from="1757502163724" duration="28000" />
+      <workItem from="1757881425086" duration="4136000" />
+      <workItem from="1757935193638" duration="14693000" />
+      <workItem from="1758109287996" duration="4251000" />
+      <workItem from="1758394737200" duration="3631000" />
+      <workItem from="1758404445264" duration="29420000" />
+      <workItem from="1759054481277" duration="27540000" />
+      <workItem from="1759244870315" duration="6035000" />
+      <workItem from="1759421298283" duration="22697000" />
+      <workItem from="1759706175091" duration="6116000" />
+      <workItem from="1759806626381" duration="4520000" />
+      <workItem from="1760454151998" duration="1302000" />
+      <workItem from="1760635290069" duration="3306000" />
+      <workItem from="1760715759568" duration="190000" />
+      <workItem from="1760827932584" duration="15458000" />
+      <workItem from="1761420341785" duration="12421000" />
+      <workItem from="1761489602664" duration="4589000" />
+      <workItem from="1761494992989" duration="1436000" />
+      <workItem from="1761502216064" duration="4103000" />
     </task>
+    <task id="LOCAL-00001" summary="All the Physics-Guided counterfactual experiments and code">
+      <option name="closed" value="true" />
+      <created>1757936081296</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1757936081297</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="All the Physics-Guided counterfactual experiments and code" />
+    <option name="LAST_COMMIT_MESSAGE" value="All the Physics-Guided counterfactual experiments and code" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/anaconda3/Lib/site-packages/dice_ml/explainer_interfaces/dice_genetic.py</url>
+          <line>584</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/anaconda3/Lib/site-packages/dice_ml/explainer_interfaces/dice_genetic.py</url>
+          <line>573</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/anaconda3/Lib/site-packages/dice_ml/explainer_interfaces/dice_genetic.py</url>
+          <line>445</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SolarEnergyParticlePrediction$dice_genetic.coverage" NAME="dice_genetic Coverage Results" MODIFIED="1758406438026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/anaconda3/Lib/site-packages/dice_ml/explainer_interfaces" />
+    <SUITE FILE_PATH="coverage/SolarEnergyParticlePrediction$Mean_sliced_data_generation.coverage" NAME="Mean_sliced_data_generation Coverage Results" MODIFIED="1758406459298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notebooks" />
+    <SUITE FILE_PATH="coverage/SolarEnergyParticlePrediction$.coverage" NAME=" Coverage Results" MODIFIED="1748959194642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/SolarEnergyParticlePrediction$SEP_CFE_Exp3_3_DiCE_Hyperparameter_Tuning.coverage" NAME="SEP_CFE_Exp3.3_DiCE_Hyperparameter_Tuning Coverage Results" MODIFIED="1752758646187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
   </component>
 </project>
