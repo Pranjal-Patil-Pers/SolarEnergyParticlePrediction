@@ -225,3 +225,102 @@ def analyze_counterfactuals(
     }
 
 
+
+
+# #===================================================
+# import numpy as np
+# import pandas as pd
+# from datetime import timedelta
+# import re
+#
+# def get_perturbed_series(csv_path, sample_cfe, flux_type, slices,
+#                          start_offset_min=300, end_offset_min=660):
+#
+#     # ------------------------------------------------------
+#     # 1. Load data and extract observation window
+#     # ------------------------------------------------------
+#     df = pd.read_csv(csv_path, delimiter=',')
+#     df = df.rename(columns={'time_tag': 'time_stamp'})
+#     df['time_stamp'] = pd.to_datetime(df['time_stamp'])
+#
+#     event_start = df['time_stamp'].iloc[0] + timedelta(minutes=start_offset_min)
+#     event_end   = df['time_stamp'].iloc[0] + timedelta(minutes=end_offset_min)
+#
+#     df_obs = df[(df['time_stamp'] >= event_start) &
+#                 (df['time_stamp'] < event_end)].copy()
+#     df_obs['minutes'] = (df_obs['time_stamp'] - event_start).dt.total_seconds() / 60
+#
+#     # Original time series
+#     x = df_obs[flux_type].values
+#     n = len(x)
+#
+#     # ------------------------------------------------------
+#     # 2. Build interval list in index coordinates
+#     # ------------------------------------------------------
+#     # slices are in minute units → convert to row indices
+#     index_intervals = []
+#     for start_min, end_min in slices:
+#         mask = (df_obs['minutes'] >= start_min) & (df_obs['minutes'] < end_min)
+#         idx = np.where(mask)[0]
+#         if len(idx) > 0:
+#             index_intervals.append((idx[0], idx[-1] + 1))  # end-exclusive
+#         else:
+#             index_intervals.append((None, None))  # keep alignment
+#
+#     # Filter out empty slices but keep mapping
+#     valid_intervals = [(s, e) for (s, e) in index_intervals if s is not None]
+#
+#     # ------------------------------------------------------
+#     # 3. Build matrix A for overlapping interval means
+#     # ------------------------------------------------------
+#     k = len(valid_intervals)
+#     A = np.zeros((k, n), dtype=float)
+#
+#     for i, (start, end) in enumerate(valid_intervals):
+#         L = end - start
+#         A[i, start:end] = 1.0 / L
+#
+#     # ------------------------------------------------------
+#     # 4. Compute new means from sample_cfe
+#     # ------------------------------------------------------
+#     new_means = []
+#
+#     valid_slice_counter = 0
+#     for (start_min, end_min), (s, e) in zip(slices, index_intervals):
+#         if s is None:
+#             continue  # skip empty
+#
+#         pattern = rf'^{flux_type}_mean@\[{start_min}:{end_min}\]$'
+#         matches = sample_cfe.filter(regex=pattern)
+#
+#         if matches.shape[1] != 1:
+#             raise ValueError(f"Could not find unique mean column for slice {start_min}:{end_min}")
+#
+#         new_mean = matches.iloc[0, 0]
+#         new_means.append(new_mean)
+#
+#     new_means = np.array(new_means)
+#
+#     # ------------------------------------------------------
+#     # 5. Compute the adjusted series y:
+#     #    y = x - A^T (A A^T)^(-1) (A x - new_means)
+#     # ------------------------------------------------------
+#     Ax = A @ x
+#     AA_T_inv = np.linalg.inv(A @ A.T)
+#
+#     correction = A.T @ AA_T_inv @ (Ax - new_means)
+#     y = x - correction
+#
+#     # ------------------------------------------------------
+#     # 6. Convert to Pandas Series and compute bounds
+#     # ------------------------------------------------------
+#     perturbed_series = pd.Series(y, index=df_obs.index)
+#     original_series  = pd.Series(x, index=df_obs.index)
+#
+#     min_y = min(y.min(), x.min())
+#     max_y = max(y.max(), x.max())
+#
+#     return df_obs, perturbed_series, original_series, min_y, max_y
+
+
+

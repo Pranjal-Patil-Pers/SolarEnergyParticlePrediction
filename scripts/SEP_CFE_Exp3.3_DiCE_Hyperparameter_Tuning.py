@@ -115,7 +115,7 @@ for explainer_name, explainer in [("genetic", exp_genetic)]:  #("random", exp_ra
 
 results_df = pd.DataFrame(results)
 os.makedirs("results", exist_ok=True)
-results_df.to_csv(f"../data/evaluation_results/experiment3.3_hpt_{run_id}.csv", index=False)
+results_df.to_csv(f"../GSEP/evaluation_results/experiment3.3_hpt_{run_id}.csv", index=False)
 
-print(f"Experiment completed. Results saved to '../data/evaluation_results/experiment3.3_hpt_{run_id}.csv'.")
+print(f"Experiment completed. Results saved to '../GSEP/evaluation_results/experiment3.3_hpt_{run_id}.csv'.")
 wandb.finish()

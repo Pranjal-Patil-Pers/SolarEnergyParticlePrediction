@@ -1,0 +1,3 @@
+[submodule "slim_tsf"]
+	path = slim_tsf
+	url = https://bitbucket.org/gsudmlab/slim_tsf.git

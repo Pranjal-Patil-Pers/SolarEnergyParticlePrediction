@@ -171,30 +171,30 @@ def plot_mvts_cf(query, query_label, generated_cf, generated_cf_label, cols_to_k
 # ==================
 # Example Usage
 # ==================
-#
-# label_file = '../../data/raw/class_labels.csv'
-# data_dir = '../../data/raw/data/'
-# cols_to_keep = ['p3_flux_ic', 'p5_flux_ic', 'p7_flux_ic', 'long']
-#
-# label_map = load_labels(label_file)
-# X, y, meta = load_mvts_and_labels(data_dir, label_map, cols_to_keep=cols_to_keep, exclude_files=['2005-09-07_14-25.csv'])
-#
-# X_train, X_val, X_test, y_train, y_val, y_test, meta_train, meta_val, meta_test = train_val_test_split(X, y, meta)
-# X_train_3D = convert_to_3d_numpy(X_train, cols_to_keep)
-# X_val_3D   = convert_to_3d_numpy(X_val, cols_to_keep)
-# X_test_3D  = convert_to_3d_numpy(X_test, cols_to_keep)
-#
-# model = joblib.load('../../models/KNN_1_TS__classifier_v1.3.pkl')
-#
-# query = X_test_3D[0]
-# query_label = y_test[0]
-# dist, neighbor_indices = native_guide_retrieval_mvts(query, query_label, y_train, X_train_3D)
-# plot_query_and_neighbors(query, query_label, X_train_3D, y_train, neighbor_indices, cols_to_keep)
-#
-# insample_cf = X_train_3D[neighbor_indices[0]]
-# generated_cf = get_generated_cf(query, insample_cf, model)
-# cf_label = target_mvts(query, model)
-# plot_mvts_cf(query, query_label, generated_cf, cf_label, cols_to_keep)
-#
+
+label_file = '../../data/raw/class_labels.csv'
+data_dir = '../../data/raw/data/'
+cols_to_keep = ['p3_flux_ic', 'p5_flux_ic', 'p7_flux_ic', 'long']
+
+label_map = load_labels(label_file)
+X, y, meta = load_mvts_and_labels(data_dir, label_map, cols_to_keep=cols_to_keep, exclude_files=['2005-09-07_14-25.csv'])
+
+X_train, X_val, X_test, y_train, y_val, y_test, meta_train, meta_val, meta_test = train_val_test_split(X, y, meta)
+X_train_3D = convert_to_3d_numpy(X_train, cols_to_keep)
+X_val_3D   = convert_to_3d_numpy(X_val, cols_to_keep)
+X_test_3D  = convert_to_3d_numpy(X_test, cols_to_keep)
+
+model = joblib.load('../../models/KNN_1_TS__classifier_v1.3.pkl')
+
+query = X_test_3D[0]
+query_label = y_test[0]
+dist, neighbor_indices = native_guide_retrieval_mvts(query, query_label, y_train, X_train_3D)
+plot_query_and_neighbors(query, query_label, X_train_3D, y_train, neighbor_indices, cols_to_keep)
+
+insample_cf = X_train_3D[neighbor_indices[0]]
+generated_cf = get_generated_cf(query, insample_cf, model)
+cf_label = target_mvts(query, model)
+plot_mvts_cf(query, query_label, generated_cf, cf_label, cols_to_keep)
+
 # ==================
 
